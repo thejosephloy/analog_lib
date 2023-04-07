@@ -1,0 +1,200 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:OPAMP UA741CN
+U 1 1 642F8178
+P 5800 3800
+F 0 "UA741CN" H 6144 3846 50  0000 L CNN
+F 1 "OPAMP" H 6144 3755 50  0000 L CNN
+F 2 "" H 5800 3800 50  0001 C CNN
+F 3 "~" H 5800 3800 50  0001 C CNN
+F 4 "X" H 5800 3800 50  0001 C CNN "Spice_Primitive"
+F 5 "UA741" H 5800 3800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5800 3800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "1 2 4 5 3" H 5800 3800 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "UA741.lib" H 5800 3800 50  0001 C CNN "Spice_Lib_File"
+	1    5800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 642F92AB
+P 4400 3700
+F 0 "R1" V 4193 3700 50  0000 C CNN
+F 1 "10k" V 4284 3700 50  0000 C CNN
+F 2 "" V 4330 3700 50  0001 C CNN
+F 3 "~" H 4400 3700 50  0001 C CNN
+	1    4400 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 642F9466
+P 5000 3700
+F 0 "R2" V 4793 3700 50  0000 C CNN
+F 1 "10k" V 4884 3700 50  0000 C CNN
+F 2 "" V 4930 3700 50  0001 C CNN
+F 3 "~" H 5000 3700 50  0001 C CNN
+	1    5000 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 642FAA18
+P 5650 3000
+F 0 "C1" V 5398 3000 50  0000 C CNN
+F 1 "1n" V 5489 3000 50  0000 C CNN
+F 2 "" H 5688 2850 50  0001 C CNN
+F 3 "~" H 5650 3000 50  0001 C CNN
+	1    5650 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 642FB030
+P 5200 4650
+F 0 "C2" H 5315 4696 50  0000 L CNN
+F 1 "1n" H 5315 4605 50  0000 L CNN
+F 2 "" H 5238 4500 50  0001 C CNN
+F 3 "~" H 5200 4650 50  0001 C CNN
+	1    5200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE Vin
+U 1 1 642FB67A
+P 3650 4000
+F 0 "Vin" H 3878 4046 50  0000 L CNN
+F 1 "sin(0 0.5 15k)" H 3878 3955 50  0000 L CNN
+F 2 "" H 3650 4000 50  0001 C CNN
+F 3 "~" H 3650 4000 50  0001 C CNN
+	1    3650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 642FC944
+P 3650 4300
+F 0 "#PWR?" H 3650 4050 50  0001 C CNN
+F 1 "GND" H 3655 4127 50  0000 C CNN
+F 2 "" H 3650 4300 50  0001 C CNN
+F 3 "" H 3650 4300 50  0001 C CNN
+	1    3650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 642FD6B8
+P 5200 4800
+F 0 "#PWR?" H 5200 4550 50  0001 C CNN
+F 1 "GND" H 5205 4627 50  0000 C CNN
+F 2 "" H 5200 4800 50  0001 C CNN
+F 3 "" H 5200 4800 50  0001 C CNN
+	1    5200 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3700 4250 3700
+Wire Wire Line
+	4550 3700 4700 3700
+Wire Wire Line
+	4700 3700 4700 3000
+Wire Wire Line
+	4700 3000 5500 3000
+Connection ~ 4700 3700
+Wire Wire Line
+	4700 3700 4850 3700
+Wire Wire Line
+	5800 3000 6600 3000
+Wire Wire Line
+	6600 3000 6600 3800
+Wire Wire Line
+	6600 4400 5450 4400
+Wire Wire Line
+	5450 4400 5450 3900
+Wire Wire Line
+	5450 3900 5500 3900
+Wire Wire Line
+	5150 3700 5200 3700
+Wire Wire Line
+	5200 4500 5200 3700
+Connection ~ 5200 3700
+Wire Wire Line
+	5200 3700 5500 3700
+$Comp
+L pspice:VSOURCE VPP
+U 1 1 64304B67
+P 5700 5100
+F 0 "VPP" H 5928 5146 50  0000 L CNN
+F 1 "-5" H 5928 5055 50  0000 L CNN
+F 2 "" H 5700 5100 50  0001 C CNN
+F 3 "~" H 5700 5100 50  0001 C CNN
+	1    5700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE VCC
+U 1 1 64305AEF
+P 6350 2450
+F 0 "VCC" H 6578 2496 50  0000 L CNN
+F 1 "5" H 6578 2405 50  0000 L CNN
+F 2 "" H 6350 2450 50  0001 C CNN
+F 3 "~" H 6350 2450 50  0001 C CNN
+	1    6350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 643072D2
+P 6350 2750
+F 0 "#PWR?" H 6350 2500 50  0001 C CNN
+F 1 "GND" H 6355 2577 50  0000 C CNN
+F 2 "" H 6350 2750 50  0001 C CNN
+F 3 "" H 6350 2750 50  0001 C CNN
+	1    6350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6430805E
+P 5700 5400
+F 0 "#PWR?" H 5700 5150 50  0001 C CNN
+F 1 "GND" H 5705 5227 50  0000 C CNN
+F 2 "" H 5700 5400 50  0001 C CNN
+F 3 "" H 5700 5400 50  0001 C CNN
+	1    5700 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4100 5700 4800
+Wire Wire Line
+	6100 3800 6600 3800
+Connection ~ 6600 3800
+Wire Wire Line
+	6600 3800 6600 4400
+Wire Wire Line
+	6350 2150 5750 2150
+Wire Wire Line
+	5750 2150 5750 3500
+Wire Wire Line
+	5750 3500 5700 3500
+Text GLabel 6600 3800 0    50   Input ~ 0
+Vout
+Text GLabel 3850 3700 0    50   Input ~ 0
+Vin
+Text Notes 3650 2600 0    50   ~ 0
+.tran 0.1m 10m
+$EndSCHEMATC
