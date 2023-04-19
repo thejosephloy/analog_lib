@@ -48,7 +48,7 @@
 
 ## Performance Analysis 
 
-## Build of Materials
+## Bill of Materials
 
 ### DT830D Digital Multimeter
 
