@@ -23,4 +23,4 @@
 ### Quadrature Oscillator
 ![](img/ref/quadrature.png)
 
-
+### Triangle Oscillator
