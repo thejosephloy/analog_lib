@@ -24,9 +24,27 @@
 
 ![](img/ref/differential.png)
 
-### Differentiator
+### Inverting differentiator
 
-### Integrator
+### Inverting differentiator with noise filter
+
+### Inverting integrator
+
+### Inverting integrator with input current compensation
+
+### Inverting integrator with drift compensation
+
+### Inverting integrator with mechanical reset
+
+### Inverting integrator with electronic reset
+
+### Inverting integrator with resisitive reset 
+
+### Non-inverting integrator with inverting buffer
+
+### Non-inverting integrator approximation
+
+
 
 ## Performance Analysis 
 
