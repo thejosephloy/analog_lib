@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:OPAMP ua741cn1
+U 1 1 644C0548
+P 5650 3850
+F 0 "ua741cn1" H 5994 3896 50  0000 L CNN
+F 1 "OPAMP" H 5994 3805 50  0000 L CNN
+F 2 "" H 5650 3850 50  0001 C CNN
+F 3 "~" H 5650 3850 50  0001 C CNN
+F 4 "X" H 5650 3850 50  0001 C CNN "Spice_Primitive"
+F 5 "UA741" H 5650 3850 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5650 3850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "1 2 4 5 3" H 5650 3850 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "UA741.lib" H 5650 3850 50  0001 C CNN "Spice_Lib_File"
+	1    5650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:OPAMP ua741cn2
+U 1 1 644C086A
+P 7000 5100
+F 0 "ua741cn2" H 7344 5146 50  0000 L CNN
+F 1 "OPAMP" H 7344 5055 50  0000 L CNN
+F 2 "" H 7000 5100 50  0001 C CNN
+F 3 "~" H 7000 5100 50  0001 C CNN
+F 4 "X" H 7000 5100 50  0001 C CNN "Spice_Primitive"
+F 5 "UA741" H 7000 5100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7000 5100 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "1 2 4 5 3" H 7000 5100 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "UA741.lib" H 7000 5100 50  0001 C CNN "Spice_Lib_File"
+	1    7000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 644C1B32
+P 5550 2250
+F 0 "C?" V 5298 2250 50  0000 C CNN
+F 1 "C" V 5389 2250 50  0000 C CNN
+F 2 "" H 5588 2100 50  0001 C CNN
+F 3 "~" H 5550 2250 50  0001 C CNN
+	1    5550 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 644C2076
+P 6250 5150
+F 0 "C?" H 6135 5104 50  0000 R CNN
+F 1 "C" H 6135 5195 50  0000 R CNN
+F 2 "" H 6288 5000 50  0001 C CNN
+F 3 "~" H 6250 5150 50  0001 C CNN
+	1    6250 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 644C2CA6
+P 7450 6300
+F 0 "C?" V 7198 6300 50  0000 C CNN
+F 1 "C" V 7289 6300 50  0000 C CNN
+F 2 "" H 7488 6150 50  0001 C CNN
+F 3 "~" H 7450 6300 50  0001 C CNN
+	1    7450 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 644C3140
+P 5550 6200
+F 0 "R?" V 5343 6200 50  0000 C CNN
+F 1 "R" V 5434 6200 50  0000 C CNN
+F 2 "" V 5480 6200 50  0001 C CNN
+F 3 "~" H 5550 6200 50  0001 C CNN
+	1    5550 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 644C3394
+P 6250 4450
+F 0 "R?" H 6320 4496 50  0000 L CNN
+F 1 "R" H 6320 4405 50  0000 L CNN
+F 2 "" V 6180 4450 50  0001 C CNN
+F 3 "~" H 6250 4450 50  0001 C CNN
+	1    6250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 644C375B
+P 4150 3750
+F 0 "R?" V 3943 3750 50  0000 C CNN
+F 1 "R" V 4034 3750 50  0000 C CNN
+F 2 "" V 4080 3750 50  0001 C CNN
+F 3 "~" H 4150 3750 50  0001 C CNN
+	1    4150 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:VSOURCE V?
+U 1 1 644C474A
+P 5550 3250
+F 0 "V?" H 5184 3204 50  0000 R CNN
+F 1 "VSOURCE" H 5184 3295 50  0000 R CNN
+F 2 "" H 5550 3250 50  0001 C CNN
+F 3 "~" H 5550 3250 50  0001 C CNN
+	1    5550 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:VSOURCE V?
+U 1 1 644C4D27
+P 6900 4500
+F 0 "V?" H 6534 4454 50  0000 R CNN
+F 1 "VSOURCE" H 6534 4545 50  0000 R CNN
+F 2 "" H 6900 4500 50  0001 C CNN
+F 3 "~" H 6900 4500 50  0001 C CNN
+	1    6900 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 644C5619
+P 5550 4150
+F 0 "#PWR?" H 5550 3900 50  0001 C CNN
+F 1 "GND" H 5555 3977 50  0000 C CNN
+F 2 "" H 5550 4150 50  0001 C CNN
+F 3 "" H 5550 4150 50  0001 C CNN
+	1    5550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 644C5A06
+P 6900 5400
+F 0 "#PWR?" H 6900 5150 50  0001 C CNN
+F 1 "GND" H 6905 5227 50  0000 C CNN
+F 2 "" H 6900 5400 50  0001 C CNN
+F 3 "" H 6900 5400 50  0001 C CNN
+	1    6900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 644CC886
+P 5550 2950
+F 0 "#PWR?" H 5550 2700 50  0001 C CNN
+F 1 "GND" H 5555 2777 50  0000 C CNN
+F 2 "" H 5550 2950 50  0001 C CNN
+F 3 "" H 5550 2950 50  0001 C CNN
+	1    5550 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 3750 4850 3750
+Wire Wire Line
+	4850 3750 4850 2250
+Wire Wire Line
+	4850 2250 5400 2250
+Wire Wire Line
+	5700 2250 6550 2250
+Wire Wire Line
+	6550 2250 6550 3850
+Wire Wire Line
+	6550 3850 6250 3850
+Wire Wire Line
+	6250 3850 6250 4300
+Connection ~ 6250 3850
+Wire Wire Line
+	6250 3850 5950 3850
+Wire Wire Line
+	6550 3850 8300 3850
+Connection ~ 6550 3850
+Wire Wire Line
+	6250 4600 6250 5000
+Wire Wire Line
+	6700 5000 6250 5000
+Connection ~ 6250 5000
+Wire Wire Line
+	7300 5100 9200 5100
+Wire Wire Line
+	9200 5100 9200 6300
+Wire Wire Line
+	9200 6300 7600 6300
+Wire Wire Line
+	7300 6300 5700 6300
+Wire Wire Line
+	5700 6300 5700 6200
+Wire Wire Line
+	4850 3750 4850 3950
+Wire Wire Line
+	4850 3950 5350 3950
+Connection ~ 4850 3750
+$EndSCHEMATC

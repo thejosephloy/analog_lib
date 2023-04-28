@@ -89,10 +89,10 @@ F 3 "~" H 5250 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R
+L Device:R R1
 U 1 1 642B33D4
 P 6750 4700
-F 0 "R" H 6820 4746 50  0000 L CNN
+F 0 "R1" H 6820 4746 50  0000 L CNN
 F 1 "10k" H 6820 4655 50  0000 L CNN
 F 2 "" V 6680 4700 50  0001 C CNN
 F 3 "~" H 6750 4700 50  0001 C CNN
@@ -111,10 +111,10 @@ F 3 "~" H 6750 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R
+L Device:R R2
 U 1 1 642B3EA7
 P 6750 5750
-F 0 "R" H 6820 5796 50  0000 L CNN
+F 0 "R2" H 6820 5796 50  0000 L CNN
 F 1 "10k" H 6820 5705 50  0000 L CNN
 F 2 "" V 6680 5750 50  0001 C CNN
 F 3 "~" H 6750 5750 50  0001 C CNN
@@ -218,4 +218,6 @@ Text GLabel 6750 4100 0    50   Input ~ 0
 Vout
 Text GLabel 5650 6100 0    50   Input ~ 0
 VREF
+Text Notes 4550 5750 0    50   ~ 0
+.tran 1us 50ms
 $EndSCHEMATC
